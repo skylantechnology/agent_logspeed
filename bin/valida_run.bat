@@ -6,6 +6,6 @@ if "%ERRORLEVEL%"=="0" (
     	echo O %programa% esta aberto.
 ) else (
 	echo "Reiniciando o programa"
-    	C:\SKYLAN\tools\agente_logspeed\bin\agente_logspeed.exe -s 1 -t 1
+    	C:\SKYLAN\tools\agente_logspeed\bin\agente_logspeed.exe
 )
 exit
