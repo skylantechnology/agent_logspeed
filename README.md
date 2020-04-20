@@ -12,4 +12,4 @@ PASSO 1:
 
 PASSO 2:
 	Acesse a pasta do projeto no diretório onde realizou o download dos arquivos
-  Execute o arquivo install.bat como ADMINISTRADOR
+	Execute o arquivo install.bat como ADMINISTRADOR
