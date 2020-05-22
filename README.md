@@ -15,3 +15,9 @@
 	- Acesse a pasta do projeto no diretório onde realizou o download dos arquivos
 	
 	- Execute o arquivo install.bat como ADMINISTRADOR
+
+# Especificar servidor de destino
+
+	- Edite o arquivo: agente_logspeed/bin/valida_run.bat
+	- Padrão: C:\SKYLAN\tools\agente_logspeed\bin\agente_logspeed.exe
+	- Específico: C:\SKYLAN\tools\agente_logspeed\bin\agente_logspeed.exe -d [ID do Servidor] 
