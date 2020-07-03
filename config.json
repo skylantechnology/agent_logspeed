@@ -1,0 +1,14 @@
+{
+  "servidores": {
+    "1": 25780,
+    "2": 23003,
+    "3": 32942
+  },
+  "operadoras": {
+      "1": "vivo",
+      "2": "net",
+      "3": "megatelecom"
+  },
+  "test_time": 1,
+  "check_time": 1
+}
