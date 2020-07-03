@@ -14,16 +14,16 @@ Echo.
 
 echo "Criando diretorio de destino"
 mkdir c:\skylan\tools
-mkdir c:\skylan\tools\agente_logspeed
-mkdir c:\skylan\tools\agente_logspeed\bin
+mkdir c:\skylan\tools\agent_logspeed
+mkdir c:\skylan\tools\agent_logspeed\bin
 
 Echo.
 Echo.
 Echo.
 
 echo "Movendo os arquivos"
-robocopy %origem% c:\skylan\tools\agente_logspeed\bin /e
-robocopy %git% c:\skylan\tools\agente_logspeed\bin /e
+robocopy %origem% c:\skylan\tools\agent_logspeed\bin /e
+robocopy %git% c:\skylan\tools\agent_logspeed\bin /e
 
 Echo.
 Echo.
@@ -31,9 +31,9 @@ Echo.
 
 echo "Criando atalho no inicializar"
 cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-del "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Agente_Logspeed"
+del "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Agent_Logspeed"
 
-MKlink Agente_Logspeed C:\SKYLAN\tools\agente_logspeed\bin\start.vbs
+MKlink Agente_Logspeed C:\SKYLAN\tools\agent_logspeed\bin\start.vbs
 
 echo "links criados em: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
 
@@ -41,11 +41,11 @@ Echo.
 Echo.
 Echo.
 
-schtasks /Create /XML C:\SKYLAN\tools\agente_logspeed\bin\task\Agente_Logspeed.xml /TN "Agente Logspeed"
+schtasks /Create /XML C:\SKYLAN\tools\agent_logspeed\bin\task\Agent_Logspeed.xml /TN "Agent Logspeed"
 
-set programa=agente_logspeed.exe
+set programa=agent_logspeed.exe
 
-C:\SKYLAN\tools\agente_logspeed\bin\start.vbs
+C:\SKYLAN\tools\agent_logspeed\bin\start.vbs
 
 echo "Instalacao concluida."
 
